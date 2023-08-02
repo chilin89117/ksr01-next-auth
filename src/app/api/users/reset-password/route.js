@@ -22,7 +22,7 @@ export const POST = async request => {
 
 // PUT request is for updating password
 export const PUT = async request => {
-  // await dbConnect()
+  await dbConnect()
 
   try {
     const {token, password} = await request.json()
